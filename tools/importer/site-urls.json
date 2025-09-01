@@ -1,0 +1,39 @@
+{
+  "originUrl": "https://www.nec.com",
+  "aborted": false,
+  "urls": [
+    {
+      "url": "https://www.nec.com/",
+      "source": "MANUAL",
+      "targetPath": "/",
+      "id": "be09260a7413fa0cd78051c57ec067f707dc71f2"
+    },
+    {
+      "url": "https://www.nec.com/en/case/index.html",
+      "source": "MANUAL",
+      "targetPath": "/en/case",
+      "id": "32845fc23e01c96c97c4efea116497d48870b16b"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "source": "MANUAL",
+      "targetPath": "/en/global/solutions",
+      "id": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f"
+    }
+  ],
+  "lastCrawled": null,
+  "crawlOptions": {
+    "timeout": 64800000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": 100,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "manual",
+    "strategiesAttempted": [
+      "MANUAL"
+    ]
+  },
+  "extractionErrors": [],
+  "errorCountMessage": "none"
+}
