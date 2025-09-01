@@ -1,0 +1,28 @@
+{
+  "templates": [
+    {
+      "name": "'Portfolio Showcase'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "uuid": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f"
+        },
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "uuid": "32845fc23e01c96c97c4efea116497d48870b16b"
+        }
+      ]
+    },
+    {
+      "name": "'Portfolio Showcase'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://www.nec.com/",
+          "uuid": "be09260a7413fa0cd78051c57ec067f707dc71f2"
+        }
+      ]
+    }
+  ]
+}

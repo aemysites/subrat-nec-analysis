@@ -1,0 +1,575 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]"
+        },
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]"
+        },
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]"
+        }
+      ],
+      "styles": {
+        "height": 103,
+        "background": "rgba(255, 255, 255, 0.9) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-11-62b707db4a6b4e012b707846294b489d5e0004c7",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]"
+        },
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-16-62b707db4a6b4e012b707846294b489d5e0004c7",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]"
+        },
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-16-62b707db4a6b4e012b707846294b489d5e0004c7",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(15, 30, 210) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Cards",
+      "cluster": 1,
+      "source": "Cards",
+      "target": "Cards (cards1)",
+      "key": "cards1",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-04-a64842da32f1d37eb038492d33998ce5671e27c4",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[3]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 2,
+      "source": "Cards",
+      "target": "Cards (cards2)",
+      "key": "cards2",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-09-edb38186160f8f1977b4b245db53fc9fdb9ae03b",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[9]"
+        },
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-11-7b1e5678a8181e4e48c3d25bf80ccc85b09c109e",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[11]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 3,
+      "source": "Cards",
+      "target": "Cards (cards3)",
+      "key": "cards3",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-07-b1f2454d5eda88b6e6e38e3a1bdbf79772bf62bc",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[7]",
+          "section": "section-6"
+        }
+      ]
+    },
+    {
+      "name": "Hero",
+      "cluster": 4,
+      "source": "Hero",
+      "target": "Hero (hero4)",
+      "key": "hero4",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-02-7dbccb60880e2a7ec394deb885bfd047301c8d70",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[2]"
+        },
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-02-7dbccb60880e2a7ec394deb885bfd047301c8d70",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 5,
+      "source": "Columns",
+      "target": "Columns (columns5)",
+      "key": "columns5",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-16-62b707db4a6b4e012b707846294b489d5e0004c7",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]",
+          "section": "section-4"
+        },
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-16-62b707db4a6b4e012b707846294b489d5e0004c7",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]",
+          "section": "section-4"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 6,
+      "source": "Columns",
+      "target": "Columns (columns6)",
+      "key": "columns6",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-05-bebd65132d35c7fb7b57b32caa8f13297a542ab6",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[4]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 7,
+      "source": "Columns",
+      "target": "Columns (columns7)",
+      "key": "columns7",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-03-474be417a286ce552ef939123281269c04801156",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[3]",
+          "section": "section-5"
+        },
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-03-bebd65132d35c7fb7b57b32caa8f13297a542ab6",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[4]",
+          "section": "section-5"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 8,
+      "source": "Carousel",
+      "target": "Carousel (carousel8)",
+      "key": "carousel8",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-05-8f860809eb13e44f78bafc28c1f6db0172e59f47",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[5]/div[1]/div[1]/div[1]/div[2]"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 9,
+      "source": "Carousel",
+      "target": "Carousel (carousel9)",
+      "key": "carousel9",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-02-7dbccb60880e2a7ec394deb885bfd047301c8d70",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[2]",
+          "section": "section-7"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 10,
+      "source": "Columns",
+      "target": "Columns (columns10)",
+      "key": "columns10",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-09-6ced9ab33ffa622a7c5793ae61b20b1d9b99135e",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-14-6ced9ab33ffa622a7c5793ae61b20b1d9b99135e",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-2"
+        },
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-14-6ced9ab33ffa622a7c5793ae61b20b1d9b99135e",
+          "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/div[1]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "header",
+      "cluster": 11,
+      "source": "Header",
+      "target": "Header (header11)",
+      "key": "header11",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]",
+          "section": "section-1"
+        },
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-00-b2c8ec8cc7206114599cd049698cc67e0e048d63",
+          "xpath": "/html[1]/body[1]/header[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 12,
+      "source": "Carousel",
+      "target": "Carousel (carousel12)",
+      "key": "carousel12",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-01-6b41b854190b2b8cb4f6e23584361154abd99a9d",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "cluster": 13,
+      "source": "Search",
+      "target": "Search (search13)",
+      "key": "search13",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-06-62b0b7b42bff411e93c0404e45ac63e4c68abd24",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[6]"
+        }
+      ]
+    },
+    {
+      "name": "Carousel",
+      "cluster": 14,
+      "source": "Carousel",
+      "target": "Carousel (carousel14)",
+      "key": "carousel14",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-04-30e2e2cba56a9c39004f9a2aa148b2f19a1a87b1",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[5]/div[1]/div[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 15,
+      "source": "Cards",
+      "target": "Cards (cards15)",
+      "key": "cards15",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-12-86272374f9780afebbed894b47831f8375305814",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[12]",
+          "section": "section-6"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 16,
+      "source": "Cards",
+      "target": "Cards (cards16)",
+      "key": "cards16",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-09-edb38186160f8f1977b4b245db53fc9fdb9ae03b",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[9]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 17,
+      "source": "Cards",
+      "target": "Cards (cards17)",
+      "key": "cards17",
+      "instances": [
+        {
+          "url": "https://www.nec.com/",
+          "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+          "uuid": "be09260a-08-835623aee1bb594e2c6834cee3573c94ec339b70",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[8]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 18,
+      "source": "Cards",
+      "target": "Cards (cards18)",
+      "key": "cards18",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-06-6d62b62eecea2d603faed8c44c6209258ef82883",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[5]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "unknown",
+      "cluster": 19,
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/case/index.html",
+          "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+          "uuid": "32845fc2-11-62b707db4a6b4e012b707846294b489d5e0004c7",
+          "xpath": "/html[1]/body[1]/footer[1]/div[2]",
+          "section": "section-4"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 20,
+      "source": "Cards",
+      "target": "Cards (cards20)",
+      "key": "cards20",
+      "instances": [
+        {
+          "url": "https://www.nec.com/en/global/solutions/index.html",
+          "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+          "uuid": "b4017b45-05-5f353c1950934019b57b03481213dbfe71d4eacd",
+          "xpath": "/html[1]/body[1]/main[1]/section[1]/div[5]"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://www.nec.com/en/case/index.html",
+      "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+      "uuid": "32845fc2-01-6b41b854190b2b8cb4f6e23584361154abd99a9d",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[1]"
+    },
+    {
+      "url": "https://www.nec.com/en/case/index.html",
+      "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+      "uuid": "32845fc2-03-cd9f8b98c2bf3a4fcf37c384be8dd9f2049bd34f",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[3]/div[1]/h2[1]"
+    },
+    {
+      "url": "https://www.nec.com/en/case/index.html",
+      "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+      "uuid": "32845fc2-07-76efd22e84d48b92ed62db2ec62938876dbf0b58",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[5]/div[1]/p[2]"
+    },
+    {
+      "url": "https://www.nec.com/en/case/index.html",
+      "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+      "uuid": "32845fc2-08-81a1111167a25274405668315b1a1395c2602e05",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.nec.com/en/case/index.html",
+      "urlHash": "32845fc23e01c96c97c4efea116497d48870b16b",
+      "uuid": "32845fc2-10-d461fa316c7629e2236912589b357bdf891cb45c",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[3]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-01-6b41b854190b2b8cb4f6e23584361154abd99a9d",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[1]"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-04-bebd65132d35c7fb7b57b32caa8f13297a542ab6",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[4]"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-06-62b0b7b42bff411e93c0404e45ac63e4c68abd24",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[6]"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-07-b1f2454d5eda88b6e6e38e3a1bdbf79772bf62bc",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[7]"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-08-835623aee1bb594e2c6834cee3573c94ec339b70",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[8]"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-10-c5d27cbf346f3f8a0908cbef2ffdb44a7b24f88f",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[10]"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-13-81a1111167a25274405668315b1a1395c2602e05",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.nec.com/en/global/solutions/index.html",
+      "urlHash": "b4017b457c3393db1b376ddb3c1cb8b1a1ce849f",
+      "uuid": "b4017b45-15-d461fa316c7629e2236912589b357bdf891cb45c",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[3]",
+      "section": "section-3"
+    },
+    {
+      "url": "https://www.nec.com/",
+      "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+      "uuid": "be09260a-10-c5d27cbf346f3f8a0908cbef2ffdb44a7b24f88f",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[10]"
+    },
+    {
+      "url": "https://www.nec.com/",
+      "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+      "uuid": "be09260a-11-7b1e5678a8181e4e48c3d25bf80ccc85b09c109e",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[11]"
+    },
+    {
+      "url": "https://www.nec.com/",
+      "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+      "uuid": "be09260a-12-86272374f9780afebbed894b47831f8375305814",
+      "xpath": "/html[1]/body[1]/main[1]/section[1]/div[12]"
+    },
+    {
+      "url": "https://www.nec.com/",
+      "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+      "uuid": "be09260a-13-81a1111167a25274405668315b1a1395c2602e05",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[2]/div[1]/ul[1]",
+      "section": "section-2"
+    },
+    {
+      "url": "https://www.nec.com/",
+      "urlHash": "be09260a7413fa0cd78051c57ec067f707dc71f2",
+      "uuid": "be09260a-15-d461fa316c7629e2236912589b357bdf891cb45c",
+      "xpath": "/html[1]/body[1]/footer[1]/div[1]/div[3]",
+      "section": "section-3"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgba(255, 255, 255, 0.9) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(44, 105, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 6
+    },
+    {
+      "name": "section-3",
+      "background": "rgb(100, 110, 116) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    },
+    {
+      "name": "section-4",
+      "background": "rgb(15, 30, 210) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 3
+    },
+    {
+      "name": "section-5",
+      "background": "rgb(107, 115, 135) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    },
+    {
+      "name": "section-6",
+      "background": "rgb(239, 242, 246) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    },
+    {
+      "name": "section-7",
+      "background": "rgb(4, 47, 94) linear-gradient(to right, rgb(4, 18, 124) 0px, rgb(96, 105, 172) 50%, rgb(4, 18, 124) 100%) no-repeat scroll 50% 50% / 1940px 100% padding-box border-box",
+      "count": 1
+    }
+  ]
+}
