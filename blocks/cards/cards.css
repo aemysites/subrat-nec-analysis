@@ -25,3 +25,155 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+
+.cards.cards16 {
+  background: #f6f9fc;
+  padding: 32px 0;
+}
+
+.cards.cards16 > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (width <= 1100px) {
+  .cards.cards16 > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 700px) {
+  .cards.cards16 > ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Make each card a compact vertical flex container */
+.cards.cards16 > ul > li {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgb(38 50 56 / 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 310px;
+  padding: 8px 17px 12px;
+  box-sizing: border-box;
+  border: none;
+  transition: box-shadow 0.2s;
+}
+
+/* Image placeholder: larger, closer to top, portrait-rectangle, centered */
+.cards.cards16 .cards-card-body:first-child {
+  width: 93%;
+  max-width: 180px;
+  height: 140px;
+  min-height: 140px;
+  max-height: 140px;
+  margin: 0 auto 6px;
+  border-radius: 13px;
+  background: #e9eef3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content body below image: stacks vertically, left aligns text, fills available height */
+.cards.cards16 .cards-card-body:not(:first-child) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* Title */
+.cards.cards16 .cards-card-body:not(:first-child) p strong {
+  color: #263238;
+  font-size: 1.13rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top: 0;
+  display: block;
+  text-align: left;
+}
+
+/* Description */
+.cards.cards16 .cards-card-body:not(:first-child) p {
+  color: #5c6670;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Remove extra margin on last paragraph (likely the button container) */
+.cards.cards16 .cards-card-body:not(:first-child) p.button-container {
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+}
+
+/* Center button horizontally, but keep all text left-aligned */
+.cards.cards16 .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 0;
+}
+
+/* Compact button styling to match original */
+.cards.cards16 .button-container .button {
+  background: #e9eef3;
+  color: #5c6670;
+  border: 1px solid #d7e0e6;
+  border-radius: 22px;
+  box-shadow: none;
+  padding: 8px 28px;
+  font-size: 1.03rem;
+  font-weight: 700;
+  margin: 0;
+  display: inline-block;
+  min-width: 98px;
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* No underline effect for buttons */
+.cards.cards16 .button-container .button:hover,
+.cards.cards16 .button-container .button:focus {
+  background: #d7e0e6;
+  color: #263238;
+  text-decoration: none;
+}
+
+/* Responsiveness: reduce card padding and image height for mobile */
+@media (width <= 700px) {
+  .cards.cards16 > ul > li {
+    padding: 6px 5px 10px;
+    min-height: 198px;
+  }
+
+  .cards.cards16 .cards-card-body:first-child {
+    height: 73px;
+    min-height: 73px;
+    max-height: 73px;
+    margin-bottom: 4px;
+    max-width: 92px;
+  }
+
+  .cards.cards16 .button-container .button {
+    padding: 7px 17px;
+    font-size: 0.98rem;
+    min-width: 74px;
+  }
+}
