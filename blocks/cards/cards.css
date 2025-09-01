@@ -28,18 +28,19 @@
 
 
 .cards.cards16 {
-  background: #f6f9fc;
+  background: #f7fafd;
   padding: 32px 0;
 }
 
+/* Grid layout for cards */
 .cards.cards16 > ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 28px;
-  justify-content: center;
+  gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
+  justify-items: stretch;
 }
 
 @media (width <= 1100px) {
@@ -54,126 +55,142 @@
   }
 }
 
-/* Make each card a compact vertical flex container */
+/* Card base styles */
 .cards.cards16 > ul > li {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgb(38 50 56 / 10%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(46 67 105 / 6%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 310px;
-  padding: 8px 17px 12px;
+  align-items: stretch;
+  padding: 20px;
+  min-height: 340px;
   box-sizing: border-box;
   border: none;
-  transition: box-shadow 0.2s;
 }
 
-/* Image placeholder: larger, closer to top, portrait-rectangle, centered */
+/* Image container: fills width, no centering, no max-width, correct aspect ratio */
 .cards.cards16 .cards-card-body:first-child {
-  width: 93%;
-  max-width: 180px;
-  height: 140px;
-  min-height: 140px;
-  max-height: 140px;
-  margin: 0 auto 6px;
-  border-radius: 13px;
-  background: #e9eef3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 96px;
+  border-radius: 8px;
+  margin: 0 0 4px; /* further reduced for visual compactness */
+  background-color: #e9eef3;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-self: stretch;
+
+  /* Eliminate any inherited centering */
+  display: block;
 }
 
-/* Content body below image: stacks vertically, left aligns text, fills available height */
+/* Card content: stack vertically, left aligned */
 .cards.cards16 .cards-card-body:not(:first-child) {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 1 1 auto;
   padding: 0;
   margin: 0;
+  flex: 1 1 auto;
 }
 
-/* Title */
-.cards.cards16 .cards-card-body:not(:first-child) p strong {
-  color: #263238;
-  font-size: 1.13rem;
-  font-weight: 700;
-  margin-bottom: 5px;
+/* Title styling */
+.cards.cards16 .cards-card-body:not(:first-child) > p:first-of-type strong {
+  font-size: 16px;
+  color: #23272b;
+  font-weight: bold;
+  margin-bottom: 8px;
   margin-top: 0;
   display: block;
   text-align: left;
 }
 
-/* Description */
-.cards.cards16 .cards-card-body:not(:first-child) p {
-  color: #5c6670;
-  font-size: 1rem;
-  margin-bottom: 12px;
+/* Description styling */
+.cards.cards16 .cards-card-body:not(:first-child) > p:not(:first-of-type, .button-container) {
+  font-size: 13px;
+  color: #51565c;
+  margin-bottom: 0;
+  margin-top: 0;
   line-height: 1.5;
   text-align: left;
 }
 
-/* Remove extra margin on last paragraph (likely the button container) */
-.cards.cards16 .cards-card-body:not(:first-child) p.button-container {
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 100%;
-}
-
-/* Center button horizontally, but keep all text left-aligned */
+/* Button container: remove centering, left-aligned, no extra width */
 .cards.cards16 .button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 0;
+  display: block;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: auto;
 }
 
-/* Compact button styling to match original */
+/* Tighter spacing above button */
+.cards.cards16 .cards-card-body:not(:first-child) p.button-container {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* Button: left aligned, minimal, do not force min-width */
 .cards.cards16 .button-container .button {
-  background: #e9eef3;
-  color: #5c6670;
-  border: 1px solid #d7e0e6;
-  border-radius: 22px;
+  background: #fff;
+  color: #50575e;
+  border: 1px solid #bfc5cc;
+  border-radius: 20px;
   box-shadow: none;
-  padding: 8px 28px;
-  font-size: 1.03rem;
-  font-weight: 700;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 500;
   margin: 0;
-  display: inline-block;
-  min-width: 98px;
   text-align: center;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
+  display: inline-block;
+  line-height: 1.25;
+  outline: none;
 }
 
-/* No underline effect for buttons */
+/* Button hover/focus */
 .cards.cards16 .button-container .button:hover,
 .cards.cards16 .button-container .button:focus {
-  background: #d7e0e6;
-  color: #263238;
+  background: #f7fafd;
+  color: #50575e;
+  border-color: #bfc5cc;
   text-decoration: none;
 }
 
-/* Responsiveness: reduce card padding and image height for mobile */
+/* Responsive: tighter on mobile */
 @media (width <= 700px) {
   .cards.cards16 > ul > li {
-    padding: 6px 5px 10px;
+    padding: 14px 8px;
     min-height: 198px;
   }
 
   .cards.cards16 .cards-card-body:first-child {
     height: 73px;
-    min-height: 73px;
-    max-height: 73px;
     margin-bottom: 4px;
-    max-width: 92px;
   }
 
   .cards.cards16 .button-container .button {
-    padding: 7px 17px;
-    font-size: 0.98rem;
-    min-width: 74px;
+    padding: 7px 12px;
+    font-size: 13px;
   }
+}
+
+/* Example: restore image backgrounds if desired (update URLs as needed) */
+.cards.cards16 > ul > li:nth-child(1) .cards-card-body:first-child {
+  background-image: url('IMAGE_URL_1');
+}
+
+.cards.cards16 > ul > li:nth-child(2) .cards-card-body:first-child {
+  background-image: url('IMAGE_URL_2');
+}
+
+.cards.cards16 > ul > li:nth-child(3) .cards-card-body:first-child {
+  background-image: url('IMAGE_URL_3');
+}
+
+.cards.cards16 > ul > li:nth-child(4) .cards-card-body:first-child {
+  background-image: url('IMAGE_URL_4');
 }
