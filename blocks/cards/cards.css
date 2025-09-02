@@ -713,3 +713,141 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+
+.cards.cards15 {
+  background: #f5f8fb;
+  padding: 48px 0 32px;
+}
+
+/* Main grid for cards: 3 columns, centered, responsive */
+.cards.cards15 > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 285px);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 1080px;
+}
+
+/* Card: vertical stack, left-aligned */
+.cards.cards15 > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  width: 285px;
+  min-width: 0;
+}
+
+/* Card "image" area: fixed size, rounded corners, background-image, no border or box-shadow */
+.cards.cards15 > ul > li .cards-card-body:first-child {
+  width: 100%;
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  background-color: #e4e7eb; /* fallback */
+  box-shadow: none;
+}
+
+/* Example: Assign unique images per card (replace with actual URLs) */
+.cards.cards15 > ul > li:nth-child(1) .cards-card-body:first-child {
+  background-image: url('image1.jpg');
+}
+
+.cards.cards15 > ul > li:nth-child(2) .cards-card-body:first-child {
+  background-image: url('image2.jpg');
+}
+
+.cards.cards15 > ul > li:nth-child(3) .cards-card-body:first-child {
+  background-image: url('image3.jpg');
+}
+
+/* Remove margin/padding from card body wrappers and ensure vertical stacking */
+.cards.cards15 .cards-card-body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+/* Ensure label/link area fills full width and is left-aligned */
+.cards.cards15 .cards-card-body:last-child {
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+/* Remove extra margin from p.button-container and reset display */
+.cards.cards15 .cards-card-body .button-container {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* Style link as a simple underlined left-aligned label, make sure it's visible */
+.cards.cards15 .cards-card-body .button.primary {
+  display: inline-block;
+  background: none;
+  color: #222;
+  font-size: 14px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-weight: 400;
+  text-decoration: underline;
+  text-align: left;
+  line-height: 1.5;
+  box-shadow: none;
+  margin: 0;
+  max-width: 100%;
+  white-space: normal;
+  cursor: pointer;
+  vertical-align: top;
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Remove any unwanted button base style effects */
+.cards.cards15 .cards-card-body .button.primary::before,
+.cards.cards15 .cards-card-body .button.primary::after {
+  display: none;
+  content: none;
+}
+
+/* Hover effect for label/link */
+.cards.cards15 .cards-card-body .button.primary:hover,
+.cards.cards15 .cards-card-body .button.primary:focus {
+  color: #1d3ecf;
+  text-decoration: underline;
+  background: none;
+}
+
+/* Responsive: stack cards on small screens */
+@media (width <= 900px) {
+  .cards.cards15 > ul {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 96vw;
+  }
+
+  .cards.cards15 > ul > li {
+    width: 100%;
+  }
+
+  .cards.cards15 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
