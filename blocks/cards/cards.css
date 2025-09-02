@@ -600,127 +600,11 @@
 }
 
 
-.cards.cards2 {
-  background: #f7f7f7;
-  padding: 22px 0 24px;
-}
-
-.cards.cards2 > ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-@media (width <= 950px) {
-  .cards.cards2 > ul {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
-    gap: 18px;
-  }
-}
-
-@media (width <= 600px) {
-  .cards.cards2 > ul {
-    grid-template-columns: 1fr;
-    max-width: 97vw;
-    gap: 12px 0;
-  }
-}
-
-.cards.cards2 > ul > li {
-  background: #fff;
-  border: 1px solid #dadada;
-  border-radius: 6px;
-  height: 276px;
-  padding: 20px 18px 21px;
-  margin: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 2px 10px rgb(60 80 110 / 4.5%);
-  transition: box-shadow 0.13s;
-}
-
-.cards.cards2 > ul > li:hover {
-  box-shadow: 0 4px 18px rgb(44 60 120 / 8%);
-}
-
-.cards.cards2 > ul > li > .cards-card-body:first-child {
-  height: 58px;
-  margin-bottom: 13px;
-  width: 100%;
-  border-radius: 5px;
-  background: #e1e6ea;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: 0;
-}
-
-.cards.cards2 > ul > li > .cards-card-body:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  min-height: 0;
-}
-
-.cards.cards2 .cards-card-body h3 {
-  margin: 0 0 7px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.2;
-}
-
-.cards.cards2 .cards-card-body p:not(.button-container) {
-  margin: 0 0 9px;
-  font-size: 12px;
-  color: #525252;
-  font-weight: 400;
-  line-height: 1.36;
-}
-
-.cards.cards2 .cards-card-body p.button-container {
-  margin-top: auto;
-  margin-bottom: 0;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.cards.cards2 .cards-card-body p.button-container a.button {
-  background: #525252;
-  color: #fff;
-  border-radius: 4px;
-  padding: 8px 18px 8px 15px;
-  font-size: 12px;
-  font-weight: 700;
-  box-shadow: none;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  margin: 0;
-  min-width: 0;
-  transition: background 0.18s;
-}
-
-.cards.cards2 .cards-card-body:last-child {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-
 .cards.cards15 {
   background: #f5f8fb;
   padding: 48px 0 32px;
 }
 
-/* Main grid for cards: 3 columns, centered, responsive */
 .cards.cards15 > ul {
   display: grid;
   grid-template-columns: repeat(3, 285px);
@@ -734,7 +618,6 @@
   max-width: 1080px;
 }
 
-/* Card: vertical stack, left-aligned */
 .cards.cards15 > ul > li {
   display: flex;
   flex-direction: column;
@@ -747,7 +630,6 @@
   min-width: 0;
 }
 
-/* Card "image" area: fixed size, rounded corners, background-image, no border or box-shadow */
 .cards.cards15 > ul > li .cards-card-body:first-child {
   width: 100%;
   height: 140px;
@@ -756,11 +638,10 @@
   background-repeat: no-repeat;
   border-radius: 8px;
   margin-bottom: 14px;
-  background-color: #e4e7eb; /* fallback */
+  background-color: #e4e7eb;
   box-shadow: none;
 }
 
-/* Example: Assign unique images per card (replace with actual URLs) */
 .cards.cards15 > ul > li:nth-child(1) .cards-card-body:first-child {
   background-image: url('image1.jpg');
 }
@@ -773,7 +654,6 @@
   background-image: url('image3.jpg');
 }
 
-/* Remove margin/padding from card body wrappers and ensure vertical stacking */
 .cards.cards15 .cards-card-body {
   margin: 0;
   padding: 0;
@@ -781,21 +661,18 @@
   display: block;
 }
 
-/* Ensure label/link area fills full width and is left-aligned */
 .cards.cards15 .cards-card-body:last-child {
   width: 100%;
   padding: 0;
   display: block;
 }
 
-/* Remove extra margin from p.button-container and reset display */
 .cards.cards15 .cards-card-body .button-container {
   margin: 0;
   padding: 0;
   display: block;
 }
 
-/* Style link as a simple underlined left-aligned label, make sure it's visible */
 .cards.cards15 .cards-card-body .button.primary {
   display: inline-block;
   background: none;
@@ -819,14 +696,12 @@
   visibility: visible;
 }
 
-/* Remove any unwanted button base style effects */
 .cards.cards15 .cards-card-body .button.primary::before,
 .cards.cards15 .cards-card-body .button.primary::after {
   display: none;
   content: none;
 }
 
-/* Hover effect for label/link */
 .cards.cards15 .cards-card-body .button.primary:hover,
 .cards.cards15 .cards-card-body .button.primary:focus {
   color: #1d3ecf;
@@ -834,7 +709,6 @@
   background: none;
 }
 
-/* Responsive: stack cards on small screens */
 @media (width <= 900px) {
   .cards.cards15 > ul {
     grid-template-columns: 1fr;
@@ -849,5 +723,152 @@
   .cards.cards15 {
     padding-left: 8px;
     padding-right: 8px;
+  }
+}
+
+
+.cards.cards2 {
+  background: #f7f7f7;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Grid for the card list, slightly wider and more edge-to-edge */
+.cards.cards2 > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+@media (width <= 950px) {
+  .cards.cards2 > ul {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    gap: 18px;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cards2 > ul {
+    grid-template-columns: 1fr;
+    max-width: 97vw;
+    gap: 12px 0;
+  }
+}
+
+/* Card container - more compact */
+.cards.cards2 > ul > li {
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  overflow: hidden;
+  box-shadow: none;
+  transition: box-shadow 0.13s;
+}
+
+/* Card image area - taller and flush */
+.cards.cards2 > ul > li > .cards-card-body:first-child {
+  width: 100%;
+  height: 140px;
+  margin: 0;
+  padding: 0;
+  background-color: #e1e6ea;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Card content area - less bottom padding */
+.cards.cards2 > ul > li > .cards-card-body:last-child {
+  padding: 12px 16px 4px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  min-height: 0;
+}
+
+/* Card title - more compact and bold */
+.cards.cards2 .cards-card-body h3 {
+  margin: 8px 0 2px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.2;
+  padding: 0;
+}
+
+/* Card description - tighter spacing */
+.cards.cards2 .cards-card-body p:not(.button-container) {
+  margin: 0 0 4px;
+  font-size: 12px;
+  color: #444;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0;
+}
+
+/* Button area - center and reduce margin above button */
+.cards.cards2 .cards-card-body p.button-container {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+/* Button appearance - slightly more compact */
+.cards.cards2 .cards-card-body p.button-container a.button {
+  background: #444;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+  min-width: 0;
+  transition: background 0.18s;
+  line-height: 1.3;
+}
+
+/* Remove default margin from ul */
+.cards.cards2 ul {
+  margin-top: 0;
+}
+
+/* Avoid inherited margin in images if present */
+.cards.cards2 > ul > li img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 140px;
+}
+
+/* Responsive: Reduce content padding for very narrow screens */
+@media (width <= 400px) {
+  .cards.cards2 > ul > li > .cards-card-body:last-child {
+    padding: 8px;
   }
 }
