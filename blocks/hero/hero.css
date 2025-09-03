@@ -45,3 +45,63 @@
     padding: 40px 32px;
   }
 }
+
+.hero.hero4 {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 160px;
+  width: 100%;
+  background: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1280&q=80') center left/cover no-repeat;
+  box-sizing: border-box;
+}
+
+/* Remove max-width and padding so hero spans full width */
+.hero-container > .hero-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+/* Use flex to arrange columns side by side, but only first column is used for text in this layout */
+.hero.hero4 > div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+/* Refine headline column placement for more visual comfort */
+.hero.hero4 > div:last-child {
+  flex: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 72px;
+  padding-top: 56px;
+  min-width: 220px;
+}
+
+/* Headline visual styling for prominence */
+.hero.hero4 h1#case-studies {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (width <= 600px) {
+  .hero.hero4 > div:last-child {
+    padding-left: 24px;
+    padding-top: 24px;
+    min-width: 150px;
+  }
+
+  .hero.hero4 h1#case-studies {
+    font-size: 18px;
+  }
+}
